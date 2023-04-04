@@ -1,9 +1,11 @@
-# GitHubActionTests
+# GitHubAction-Swift-Examples
 
-リポジトリは GitHub Actions のサポート状況をチェックするために使用します. 以下のパラメータに従ってブランチを分け, いつでも実行できるように準備します.
+## 目的
 
-- macOS version
-- Swift version
+- SwiftPM で GitHub Actions を使うための雛形として使います.
+- GitHub Actions のサポート状況をチェックするために使用します. 以下のパラメータに従ってブランチを分け, いつでも実行できるように準備します.
+    - macOS version
+    - Swift version
 
 公式 : https://github.com/actions/runner-images
 
