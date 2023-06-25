@@ -11,10 +11,27 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
-
+  macos-latest:
     runs-on: macos-latest
-
+    timeout-minutes: 5
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build
+      run: swift build -v
+    - name: Run tests
+      run: swift test -v
+  macos-12:
+    runs-on: macos-12
+    timeout-minutes: 5
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build
+      run: swift build -v
+    - name: Run tests
+      run: swift test -v
+  macos-11:
+    runs-on: macos-11
+    timeout-minutes: 5
     steps:
     - uses: actions/checkout@v3
     - name: Build
