@@ -19,16 +19,16 @@ jobs:
       run: swift build -v
     - name: Run tests
       run: swift test -v
-  macos-12:
-    runs-on: macos-12
+  macos-14:
+    runs-on: macos-14
     steps:
     - uses: actions/checkout@v3
     - name: Build
       run: swift build -v
     - name: Run tests
       run: swift test -v
-  macos-11:
-    runs-on: macos-11
+  macos-13:
+    runs-on: macos-13
     steps:
     - uses: actions/checkout@v3
     - name: Build
