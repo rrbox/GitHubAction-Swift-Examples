@@ -11,10 +11,24 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
-
+  macos-latest:
     runs-on: macos-latest
-
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build
+      run: swift build -v
+    - name: Run tests
+      run: swift test -v
+  macos-14:
+    runs-on: macos-14
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build
+      run: swift build -v
+    - name: Run tests
+      run: swift test -v
+  macos-13:
+    runs-on: macos-13
     steps:
     - uses: actions/checkout@v3
     - name: Build
